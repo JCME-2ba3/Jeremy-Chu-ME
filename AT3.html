@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JCME | 41055 AT3</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <h1 class="main-title">JC MechE and BioMed</h1>
+</header>
+<!-- Menu Items -->
+<nav>
+    <ul class="nav-menu">
+
+        <li><a href="index.html">Home</a></li>
+
+        <li><a href="CV.html">Curriculum Vitae</a></li>
+
+        <li class="dropdown">
+            <a href="tasks.html">41055 Assessment Tasks</a>
+
+            <ul class="dropdown-menu">
+                <li><a href="AT1.html">Assessment Task 1 - Draft Portfolio and Reflections Pt.1</a></li>
+                <li><a href="AT2.html">Assessment Task 2 - Cover Letter, Draft Portfolio and Reflections Pt.2 (Electric Boogaloo)</a></li>
+                <li><a href="AT3.html">Assessment Task 3 - Final Engineering Portfolio Artefacts</a></li>
+            </ul>
+        </li>
+
+    </ul>
+</nav>
+
+<section>
+<h1 class="section-title">Assessment Task 3</h1>
+<p class="body-text">As part of the UTS subject 41055 Professional Experience Review, I am required to complete several 
+        artefacts which demonstrate my professional ability for the engineering workforce. Links to these artefacts can be found below 
+        or in the dropdown menu, a brief description of each is given here. </p>
+</section>
+
+<section>
+    <p class="sub-title">Tailored Resume for an Acoustic Engineer Position at Industrus</p>
+                <p class="body-text">Below is my resume applying for an Acoustic Engineer position at the 
+                    simulated company Industrus. 
+                    Though in reality, this is a real resume I submitted for an Acoustic Engineer position,
+                    which I am being interviewed for the position. 
+                </p>
+    <button onclick="togglePDF('pdf1')" class="pdf-button">Open</button>
+    <div id="pdf1" style="display:none;"><embed src="files/3_Acoustic_Engineering_CV.pdf" width="100%" height="1000px"></embed></div>
+
+    <p class="sub-title">Cover Letter for an Engineering Position at Industrus</p>
+        <p class="body-text">The following is a general cover letter addressing hiring "criteria" for the
+            compnay Industrus. This is an updated version since AT2. Any information added or changed is
+            <span style="color: rgb(255, 0, 0);"> written in red</span> for ease of viewing for markers.
+        </p>
+    <button onclick="togglePDF('pdf3')" class="pdf-button">Open</button>
+    <div id="pdf3" style="display:none;"><embed src="files/3_2a_JChu_Cover_Letter_(Revised_for_3a).pdf" width="100%" height="1000px"></div>    
+
+    <p class="sub-title">Refined Internship Reflection</p>
+        <p class="body-text">Below is my final reflection of my internship experience. It is an improved
+            version from AT1. Please note that information which has been added or changed is 
+            <span style="color: red;"> written in red</span> for ease of viewing for markers.
+        </p>
+    <button onclick="togglePDF('pdf2')" class="pdf-button">Open</button>
+    <div id="pdf2" style="display:none;"><embed src="files/3_JChu_1a_Internship_Reflective_Questions_(Revised_for_3a).pdf" width="100%" height="1000px"></div>
+
+</section>
+
+<script>
+function togglePDF(id) {
+    var viewer = document.getElementById(id);
+
+    if (viewer.style.display === "none" || viewer.style.display === "") {
+        viewer.style.display = "block";
+    } else {
+        viewer.style.display = "none";
+    }
+}
+</script>
